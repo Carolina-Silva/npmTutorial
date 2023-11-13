@@ -1,7 +1,6 @@
 import('inquirer').then(({ default: inquirer }) => {
     import('chalk').then(({ default: chalk }) => {
       import('lodash').then(({ default: _ }) => {
-        // Seu código aqui
   
         let tasks = ['Atividades de Estatistica', 'Teste de Usabilidade', 'Estudar Mainframes'];
   
@@ -23,7 +22,7 @@ import('inquirer').then(({ default: inquirer }) => {
               tasks.push(answers.newTask);
               console.log(chalk.green('Tarefa adicionada com sucesso!\n'));
               showTasks();
-              startApp(); // Chame startApp novamente para continuar o ciclo
+              startApp();
             });
         }
   
@@ -51,7 +50,7 @@ import('inquirer').then(({ default: inquirer }) => {
             });
         }
   
-        startApp(); // Chame startApp para iniciar o ciclo
+        startApp();
       });
     });
   });
